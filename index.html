@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="backgroundimage">
+    <div class="headline">
+      <h1 id="title">Pesquisa de Opinião sobre Velozes e Furiosos</h1>
+      <p id="description">Sua resposta é muito importante para nós</p>
+    </div>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Me diz, quem é você?</legend>
+        <label id="name-label">
+          Nome: <input type="text" id="name" placeholder="Nome" required />
+        </label>
+        <label id="email-label">
+          E-mail: <input type="email" id="email" placeholder="E-mail" required />
+        </label>
+        <label id="number-label">
+          Idade: <input type="number" id="number" min="10" max="99" placeholder="Idade" />
+        </label>
+        <label>Qual é a sua principal ocupação?
+          <select id="dropdown">
+            <option value="1">(Escolha um)</option>
+            <option value="2">Estudante</option>
+            <option value="3">Profissional Liberal ou Empresária</option>
+            <option value="4">Servidora Pública ou Militar</option>
+            <option value="5">Empregada no Setor Privado</option>
+            <option value="6">Autônoma ou Prestadora de Serviços</option>
+            <option value="7">Aposentado ou Pensionista</option>
+            <option value="8">Outros</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Você recomendaria lagum dos filmes para seus amigos??</legend>
+        <label>
+          <input type="radio" name="recomendation" value="recommend" class="inline" />Recomendaria
+        </label>
+        <label>
+          <input type="radio" name="recomendation" value="not-recommend" class="inline" />Não recomendaria
+        </label>
+        <label>
+          <input type="radio" name="recomendation" value="not-know" class="inline" />Não sei informar
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Quais filmes você mais apreciou?</legend>
+        <label>
+          <input type="checkbox" value="sectors" class="inline">VElozes e Furiosos 1
+        </label>
+        <label>
+          <input type="checkbox" value="sectors" class="inline">+Velozes e +Furiosos
+        </label>
+        <label>
+          <input type="checkbox" value="sectors" class="inline">Desafio em Tóquio
+        </label>
+        <label>
+          <input type="checkbox" value="sectors" class="inline">Operação Rio
+        </label>
+        <label>
+          <input type="checkbox" value="sectors" class="inline">Velozes e Furiosos 5
+        </label>
+        <label>
+          <input type="checkbox" value="sectors" class="inline">Velozes e furiosos 6
+        </label>
+        <label>
+          <input type="checkbox" value="sectors" class="inline">Velozes e Furiosos 7
+        </label>
+        <label>
+          <input type="checkbox" value="sectors" class="inline">Velozes e Furiosos 8
+        </label>
+        <label>
+          <input type="checkbox" value="sectors" class="inline">Velozes e Furiosos 9
+        </label>
+        <label>
+          Algum comentário, crítica ou sugestão?
+          <textarea rows="5" cols="30" id="comments" placeholder="Conte-nos mais..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Enviar" />
+    </form>
+  </div>
+</body>
+
+</html>
